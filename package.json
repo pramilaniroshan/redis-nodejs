@@ -1,0 +1,20 @@
+{
+  "name": "redis-nodejs",
+  "version": "1.0.0",
+  "description": "simple redis caching server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramilaniroshan/redis-nodejs.git"
+  },
+  "keywords" :["redis", "nodejs", "express", "cache", "axios"],
+  "author": "pramila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pramilaniroshan/redis-nodejs/issues"
+  },
+  "homepage": "https://github.com/pramilaniroshan/redis-nodejs#readme"
+}
