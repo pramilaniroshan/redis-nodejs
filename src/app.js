@@ -13,7 +13,7 @@ app.get("/character", async (req, res) => {
     try {
       const response = await axios.get('https://rickandmortyapi.com/api/character')   
      
-      console.log(response.data)      
+      //X-Response-Time: 374.820ms
       return res.status(200).json(response.data) 
     } catch (err) {   
       return res.status(500).json({ mmessage: err.mmessage }) 
