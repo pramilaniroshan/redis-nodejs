@@ -10,11 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/pramilaniroshan/redis-nodejs.git"
   },
-  "keywords" :["redis", "nodejs", "express", "cache", "axios"],
+  "keywords": [
+    "redis",
+    "nodejs",
+    "express",
+    "cache",
+    "axios"
+  ],
   "author": "pramila",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pramilaniroshan/redis-nodejs/issues"
   },
-  "homepage": "https://github.com/pramilaniroshan/redis-nodejs#readme"
+  "homepage": "https://github.com/pramilaniroshan/redis-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "redis": "^4.2.0"
+  }
 }
