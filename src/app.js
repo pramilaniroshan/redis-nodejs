@@ -19,6 +19,14 @@ app.use(responseTime())
 app.get("/character", async (req, res) => {
 
     try {
+      //redis setup
+      const cacheCharacters = await client.get('characters')
+
+      if (cacheCharacters) {
+        //X-Response-Time: 1.541ms
+        return res.json(JSON.parse(cacheCharacters))
+      }     
+
       const response = await axios.get('https://rickandmortyapi.com/api/character')  
       await client.set('characters', JSON.stringify(response.data)) 
      
