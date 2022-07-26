@@ -19,7 +19,8 @@ app.use(responseTime())
 app.get("/character", async (req, res) => {
 
     try {
-      const response = await axios.get('https://rickandmortyapi.com/api/character')   
+      const response = await axios.get('https://rickandmortyapi.com/api/character')  
+      await client.set('characters', JSON.stringify(response.data)) 
      
       //X-Response-Time: 374.820ms
       return res.status(200).json(response.data) 
